@@ -14,7 +14,7 @@ const del          = require('del');
 
 function browsersync(){
     browserSync.init({
-        server: {baseDir: 'app/'},
+        server: {baseDir: 'dest/'},
         notify:false,
         online: true
     })
@@ -27,7 +27,7 @@ function scripts(){
     ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
-    .pipe(dest('dist/js/'))
+    .pipe(dest('dest/js/'))
     .pipe(browserSync.stream())
 }
 
@@ -37,30 +37,25 @@ function styles(){
     .pipe(concat('app.min.css'))
     .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true }))
     .pipe(cleancss(({level:{1:{specialComments:0}}/*, format:'beautify'*/})))
-    .pipe(dest('dist/css/'))
+    .pipe(dest('dest/css/'))
     .pipe(browserSync.stream())
 }
 //проблема з img&&&&&&?????????????
 function images(){
     return src('app/img/src/**/*')
-    .pipe(newer('app/img/dest/')) 
+    //.pipe(newer('app/img/dest/')) 
     .pipe(imagemin())
-    .pipe(dest('app/img/dest/'))
+    .pipe(dest('dest/img/'))
 }
 
 function cleanimg(){
 return del('app/img/dest/**/*',{forse: true})
 }
 
-function buildcopy(){
-    return src(['app/css/**/*.min.css',
-    'app/js/**/*.min.js',
-    'app/img/src/**/*',
-    'app/**/*.html',
-     ])
+function html(){
+    return src('app/*.html')
     .pipe(dest('dest'));
 }
-
 function startwatch(){
     watch('app//sass//*',styles);
     watch(['app/**/*.js','!app/**/*.min.js'],scripts);
@@ -73,6 +68,7 @@ exports.scripts=scripts;
 exports.styles=styles;
 exports.images=images;
 exports.cleanimg=cleanimg;
-exports.build=series(styles,scripts,images,buildcopy);
+exports.html = html;
+exports.build=series(styles,scripts,images,html);
 
-exports.default=parallel(styles,scripts,browsersync,startwatch);
+exports.default=series(parallel(styles,scripts,images,html),browsersync,startwatch);
