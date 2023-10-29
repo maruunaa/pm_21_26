@@ -1,0 +1,41 @@
+.user_pic{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.button_style{
+    width: 60px;
+    height: 45px;
+    color:white;
+    background-color: #313131;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.sidebar {
+    width: 60px;
+    height: 100%;
+    color: white;
+    background-color: #313131;
+    
+    .vertical_menu {
+        img {
+            max-width: 100%;
+        }
+    }
+    .button {
+        margin-bottom: 17px; /* Змініть значення на бажане для більшого або меншого відступу */
+      }
+    justify-content: center;
+    
+}
+

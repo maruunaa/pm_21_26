@@ -32,7 +32,7 @@ function scripts(){
 }
 
 function styles(){
-    return src('app/sass/main.sass')
+    return src('app/sass/*.scss')
     .pipe(sass())
     .pipe(concat('app.min.css'))
     .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true }))
@@ -47,6 +47,14 @@ function images(){
     .pipe(imagemin())
     .pipe(dest('dest/img/'))
 }
+function icons(){
+    return src('app/img/src/**/*.svg')
+    .pipe(dest('dest/img/'))
+}
+// function fontello(){
+//     return src('app/font/**/*')
+//     .pipe(dest('dest/img/'))
+// }
 
 function cleanimg(){
 return del('app/img/dest/**/*',{forse: true})
@@ -67,8 +75,9 @@ exports.browsersync=browsersync;
 exports.scripts=scripts;
 exports.styles=styles;
 exports.images=images;
+exports.icons=icons;
 exports.cleanimg=cleanimg;
 exports.html = html;
-exports.build=series(styles,scripts,images,html);
+exports.build=series(styles,scripts,images,icons,html);
 
-exports.default=series(parallel(styles,scripts,images,html),browsersync,startwatch);
+exports.default=series(parallel(styles,scripts,images,icons,html),browsersync,startwatch);
