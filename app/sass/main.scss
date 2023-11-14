@@ -3,6 +3,11 @@
     width: 40px;
     height: 40px;
 }
+.user_pic_friends{
+    border-radius: 50%;
+    width: 75px;
+    height: 55px;
+}
 
 .button_style{
     width: 60px;
@@ -11,7 +16,25 @@
     background-color: #313131;
 }
 
+.button_style_map{
+  color: #b8b8b8;
+  background-color: white;
+  border-color: #b8b8b8;
+  border-style: solid;
+  height: 30px;
+  width: 30px;
+}
+.button_search{
+    right: 10px;
+    padding-top: 5px;
 
+}
+.padding-but{
+    padding-left: 10px;
+}
+.padding-but1{
+    padding-left: 30px;
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -39,3 +62,140 @@
     
 }
 
+.content-wrapper{
+    width: 100%;
+    
+    
+}
+.main-col{
+    height: 60px;
+    filter: drop-shadow(0 0 9px rgba(17,17,17,0.12));
+
+    
+}
+.border{
+    border: #313131;
+}
+
+
+.inputS{
+    border-radius: 30px;
+    width: 500px;
+    height: 30px;
+    padding-left: 16px;
+    border: #cccccc;
+  }
+
+.form-control{
+    padding-right: 30px; /* Розмір для іконки лупи + простір для тексту */
+    background-image: url("img/search_icon.svg"); /* Шлях до SVG-іконки лупи */
+    background-size: 20px; /* Розмір іконки лупи */
+    background-repeat: no-repeat;
+    background-position: right center; /* Позиція іконки лупи */
+    padding-left: 40px;
+    border-radius: 20px;
+}
+.dashb{
+    
+    font-weight: bold;
+}
+.name{
+    margin-bottom:0px;
+}
+.margin-top-padding{
+    margin-top:35px;
+}
+.ToDoList{
+    margin-bottom: 40px;
+}
+.CheckBox{
+    margin-bottom: 30px;
+}
+.form-check-input{
+    height: 25px;
+    width: 25px;
+}
+.form-check-input:checked {
+    background-color: #18cdca;
+    border-color: #18cdca;
+}
+.form-check-label{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 4px;
+}
+.restangle{
+    height: 28px;
+    width: 70px;
+    border-radius: 4px;
+}
+.welcomeP{
+    
+    color: #b8b8b8;
+}
+.dot{
+    height: 18px;
+    width: 13px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5%;
+    padding-right: 1px;
+    left: 30px;
+    top: -18px;
+    border: 4px solid white;
+}
+.graph6-1{
+    color: white;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+.graphDot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 18px;
+    margin-top: 40px;
+}
+.padding-graph{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.Month{
+    border-radius: 5px 0px 0px 5px;
+}
+.Year{
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 520px;
+}
+.MonthColor{
+    background-color:#003054
+}
+.YearColor{
+    background-color: #215983;
+}
+.green{
+    background-color:#52be7f;
+}
+.red{
+    background-color: #ef4135;
+}
+.blue{
+    background-color: #3498db;
+}
+.greenText{
+    color: #2fad35;
+}
+.redText{
+    color: #ff494a;
+}
+
+.padding-bottoms{
+    padding-left: 40px;
+}

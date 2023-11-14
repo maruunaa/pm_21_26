@@ -12,8 +12,8 @@
   </head>
   <body>
     <div class="d-flex">
-    <div class="sidebar">
-      <div class="d-flex flex-column align-items-center flex-wrap">
+    <div class="sidebar d-flex">
+      <div class="d-flex flex-column align-items-center ">
         <img src="img/logoIMG.jpg" alt="logo">
       
         <img src="img/man.jpg" alt="man" class="user_pic">
@@ -71,15 +71,268 @@
         </a>
       </div>
 
-
-      <p>sidebar</p>
     </div>
-    <div class="content">
-      <p>content</p>
-    </div>
-    </div>
-
     
+    <div class="content-wrapper">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">       
+        <div class="container-fluid">
+          <a class="button padding-but" class="button_style">
+            <img src="img/icon_menu.svg" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="d-flex position-relative padding-but1" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn position-absolute button_search" type="submit">
+                <img src="img/search_icon.svg" alt="">
+              </button>
+            </form>
+          </div>
+          <a class="button padding-bottoms">
+            <img src="img/fullscreen-outlined.svg" alt="">
+          </a>
+          <a class="button padding-bottoms">
+            <img src="img/bell-24.svg" alt="">
+          </a>
+          <a class="button  padding-bottoms">
+            <img src="img/messages.svg" alt="">
+          </a>
+          <a class="button padding-bottoms">
+            <img src="img/settings-thin.svg" alt="">
+          </a>
+          <a class="button padding-bottoms">
+            <img src="img/off.svg" alt="">
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid border ">
+        <div class="row border">
+          <div class="col border">
+            <p class="dashb fs-3">Dashboard</p>
+            <p class="welcomeP fs-5">Welcome to Admin Sayang Responsive Web Admin Template</p>
+          </div>
+        </div>
+        <div class="row border d-flex">
+          <div class="col-1 d-flex align-items-start flex-column mb-3">
+            <button type="button" class="button button_style_map">+</button>
+            <button type="button" class="button button_style_map">-</button> 
+          </div>
+          <div class="col">
+            <p class="mt-auto p-2"> WORLD MAP </p>
+          </div>
+         
+        </div>
+        <div class="row ">
+          <div class="col border">
+            <div class="d-flex">
+              <p class="fs-6 dashb">New Orders</p>
+              <img src="img/arrowup.svg" alt="" class="align-items-baseline">
+              <p class="fs-6 greenText dashb">6.31%</p>
+              <img src="img/shopping.svg" alt="" class="ms-auto p-2">
+            </div>
+            <p class="fs-4 dashb">345</p>
+          </div>
+          <div class="col border">
+            <div class="d-flex">
+              <p class="fs-6 dashb">Total Revenue</p>
+              <img src="img/arrowdown.svg" alt="" class="align-items-baseline">
+              <p class="fs-6 redText dashb">1.4%</p>
+              <img src="img/dollar.svg" alt="" class="ms-auto p-2">
+            </div>
+            <p class="fs-4 dashb">$25.534</p>
+          </div>
+          <div class="col border">
+            <div class="d-flex">
+              <p class="fs-6 dashb">Task Complete</p>
+              <img src="img/arrowdown.svg" alt="" class="align-items-baseline">
+              <p class="fs-6 redText dashb">0.7%</p>
+              <img src="img/task.svg" alt="" class="ms-auto p-2">
+            </div>
+            <p class="fs-4 dashb">123</p>
+          </div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col d-flex" >
+            <p class="fs-5">Site Traffic</p>
+            <a class="button  ms-auto p-2">
+              <img src="img/up-outline.svg" alt="">
+            </a>
+            <a class="button  ms-auto p-2">
+              <img src="img/repeat.svg" alt="">
+            </a>
+            <a class="button  ms-auto p-2">
+              <img src="img/close.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-9 border d-flex">
+            <div class="Month MonthColor graph6-1"> <p>Month</p></div>
+            <div class="Year YearColor graph6-1"> <p>Year</p></div>
+            <div class="graphDot YearColor"></div>
+            <p class="welcomeP fs-6 padding-graph">New Visitor</p>
+            <div class="graphDot MonthColor"></div>
+            <p class="welcomeP fs-6 padding-graph">Return Visitor</p>
+          </div>
+          <div class="col border">
+            graph2
+
+          </div>
+          
+        </div>
+        <div class="row ">
+          <div class="col border">
+            <div class="row border">
+              <div class="col border">
+                row1
+              </div>
+            </div>
+            <div class="row border">
+              <div class="col border">
+                row2
+              </div>
+            </div>
+          </div>
+          <div class="col border">
+            
+             col2
+          </div>
+          <div class="col border">
+            <div class="row border">
+              <div class="col border">
+                row1
+              </div>
+            </div>
+            <div class="row border">
+              <div class="col border">
+                row2
+              </div>
+            </div>
+
+          </div>
+          <div class="col border">
+             col4
+          </div>
+        </div> 
+        
+        <div class="row ">
+          <div class="col border">
+            col1
+          </div>
+          <div class="col border">
+            <p class="dashb ToDoList margin-top-padding fs-3">To Do List</p>
+            <div class="form-check CheckBox align-self-center">
+              <input class="form-check-input" type="checkbox" >
+              <label class="form-check-label " for="gridCheck">
+                Schedule Meeting
+              </label>
+            </div>
+            <div class="form-check CheckBox d-flex align-items-center" >
+              <input class="form-check-input" type="checkbox" >
+              <label class="form-check-label" for="gridCheck">
+                Call clients for follow-up 
+              </label>
+              <div class="restangle red ms-auto p-2">
+                <p class="m-0">Today</p>
+              </div>
+            </div>
+            <div class="form-check CheckBox">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label" for="gridCheck">
+                Book flight for holiday
+              </label>
+            </div>
+            <div class="form-check CheckBox d-flex">
+              <input class="form-check-input" type="checkbox" >
+              <label class="form-check-label" for="gridCheck">
+                Forward important tasks
+              </label>
+              <div class="restangle blue ms-auto p-2">
+                <p class="m-0 d-flex">2 Weeks</p>
+              </div>
+            </div>
+            <div class="form-check CheckBox">
+              <input class="form-check-input" type="checkbox" >
+              <label class="form-check-label" for="gridCheck">
+                Recieve shipment
+              </label>
+            </div>
+            <div class="form-check CheckBox d-flex mb-3">
+              <input class="form-check-input" type="checkbox" >
+              <label class="form-check-label" for="gridCheck">
+                Important tasks
+              </label>
+            </div>
+          </div>
+          <div class="col border">
+            <p class="dashb margin-top-padding fs-3 ">You Have 5 New Messages</p>
+            <div class="row  pb-2 mb-4  border-bottom d-flex position-relative">
+              <img src="img/man1.jpg" alt="man" class="user_pic_friends">
+              <div class="dot green position-absolute"></div> 
+              <div class="col">
+                <div class="row ">
+                  <div class="col d-flex justify-content-between">  
+                    <p class="dashb name fs-5">James Bond</p>
+                    <p class="welcomeP name fs-8 text-end">11:23AM</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><p class="fs-6">Like My New Portfolio</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-2 mb-4  border-bottom d-flex position-relative">
+              <img src="img/man2.jpg" alt="man" class="user_pic_friends">
+              <div class="dot green position-absolute"></div> 
+              <div class="col">
+                <div class="row ">
+                  <div class="col d-flex justify-content-between">  
+                    <p class="dashb name fs-5">Andi Susanto</p>
+                    <p class="welcomeP name fs-8 text-end">11:23AM</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><p class="fs-6">I have sing a song</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row  pb-2 mb-4  border-bottom d-flex position-relative">
+              <img src="img/man3.jpg" alt="man" class="user_pic_friends">
+              <div class="dot red position-absolute"></div> 
+              <div class="col">
+                <div class="row ">
+                  <div class="col d-flex justify-content-between">  
+                    <p class="dashb name fs-5">Muing Siswoyo</p>
+                    <p class="welcomeP name fs-8 text-end">11:23AM</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><p class="fs-6">Just Design new Dribbble</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row  pb-2 mb-4  border-bottom d-flex position-relative">
+              <img src="img/man4.jpg" alt="man" class="user_pic_friends">
+              <div class="dot green position-absolute"></div> 
+              <div class="col ">
+                <div class="row ">
+                  <div class="col d-flex justify-content-between">  
+                    <p class="dashb name fs-5">Jatuh Pribumi</p>
+                    <p class="welcomeP name fs-8 text-end">11:23AM</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col"><p class="fs-6">There’s new comment for you</p></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+      </div>
+    </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
