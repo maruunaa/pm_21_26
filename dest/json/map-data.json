@@ -1,0 +1,140 @@
+[
+    {
+        "name": "Alabama",
+        "description": "Montgomery",
+        "latitude": 32.377716,
+        "longitude": -86.300568
+    },
+    {
+        "name": "Greenland",
+        "description": "Montgomery",
+        "latitude": 73.008164,
+        "longitude": -39.777342
+    },
+    {
+        "name": "Canada",
+        "description": "Montgomery",
+        "latitude": 58.23423698412717, 
+        "longitude": -128.54483545103594
+    },
+    {
+        "name": "Caribbean Sea 1",
+        "description": "Montgomery",
+        "latitude": 15.992753360238584, 
+        "longitude": -87.32413393932022
+    },
+    {
+        "name": "Caribbean Sea 2",
+        "description": "Montgomery",
+        "latitude": 15.365490589770575, 
+        "longitude": -81.16424241251731
+    },
+    {
+        "name": "Caribbean Sea 3",
+        "description": "Montgomery",
+        "latitude": 10.657082373674717, 
+        "longitude": -77.0773285739508
+    },
+    {
+        "name": "North Atlantic Ocean 1",
+        "description": "Montgomery",
+        "latitude": 32.2554313342503, 
+        "longitude": -18.669655179413162
+    },
+    {
+        "name": "North Atlantic Ocean 2",
+        "description": "Montgomery",
+        "latitude": 37.58452588404121, 
+        "longitude": -26.22824851525664
+    },
+    {
+        "name": "North Atlantic Ocean 3",
+        "description": "Montgomery",
+        "latitude": 31.808376175589338, 
+        "longitude": -28.5134046400465
+    },
+    {
+        "name": "Mauritania",
+        "description": "Montgomery",
+        "latitude": 16.810718307542196, 
+        "longitude": -10.935278782838726
+    },
+    {
+        "name": "Western Sahara",
+        "description": "Montgomery",
+        "latitude": 23.514665897339434, 
+        "longitude": -15.08606338643321
+    },
+    {
+        "name": "Romania",
+        "description": "Montgomery",
+        "latitude": 46.92099492677826,  
+        "longitude": 25.426796022365004
+    },
+    {
+        "name": "Nizhny Novgorod Oblast",
+        "description": "Montgomery",
+        "latitude": 56.557561300610395,  
+        "longitude": 42.55690185723975
+    },
+    {
+        "name": "Taymyrsky Dolgano-Nenetsky District",
+        "description": "Montgomery",
+        "latitude": 76.11520341267591,  
+        "longitude": 102.34035684042497
+    },
+    {
+        "name": "Akmola Region",
+        "description": "Montgomery",
+        "latitude": 51.842537208819714,  
+        "longitude": 70.69652093246233
+    },
+    {
+        "name": "Kerman Province",
+        "description": "Montgomery",
+        "latitude": 30.409056697197613,  
+        "longitude": 56.23471177505384
+    },
+    {
+        "name": "Chambal Division",
+        "description": "Montgomery",
+        "latitude": 26.454107996765366, 
+        "longitude":  78.02904092910897
+    },
+    {
+        "name": "Laccadive Sea",
+        "description": "Montgomery",
+        "latitude": 12.25166881738167,  
+        "longitude": 71.16310969934501
+    },
+    {
+        "name": "Celebes Sea",
+        "description": "Montgomery",
+        "latitude": 4.46444936496627,  
+        "longitude": 119.70142020368537
+    },
+    {
+        "name": "Indian Ocean 1",
+        "description": "Montgomery",
+        "latitude": -8.050617695249183,  
+        "longitude": 76.13960421921823
+    },
+    {
+        "name": "Indian Ocean 2",
+        "description": "Montgomery",
+        "latitude": -10.83236869526597,  
+        "longitude": 102.59033633734613
+    },
+    {
+        "name": "Indian Ocean 3",
+        "description": "Montgomery",
+        "latitude": -13.067847111999594,  
+        "longitude": 108.56689850987355
+    },
+    {
+        "name": "Derby-West Kimberley",
+        "description": "Montgomery",
+        "latitude": -18.144944795622354,  
+        "longitude": 124.21142890266583
+    }
+]

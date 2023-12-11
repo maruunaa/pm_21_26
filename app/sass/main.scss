@@ -1,12 +1,9 @@
-.user_pic{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-.user_pic_friends{
-    border-radius: 50%;
-    width: 75px;
-    height: 55px;
+
+.back-photo{
+    position: relative;
+    width: 300px;
+    height: 205px;
+    overflow: hidden;
 }
 
 .button_style{
@@ -45,11 +42,19 @@
 
 
 .sidebar {
-    width: 60px;
-    height: 100%;
+    .user_pic{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .navbar{
+        height: 100%;
+        width: 60px;
+        padding-top: 0px;
     color: white;
     background-color: #313131;
-    
+    justify-content: center;
+
     .vertical_menu {
         img {
             max-width: 100%;
@@ -58,8 +63,7 @@
     .button {
         margin-bottom: 17px; /* Змініть значення на бажане для більшого або меншого відступу */
       }
-    justify-content: center;
-    
+    }
 }
 
 .content-wrapper{
@@ -76,8 +80,9 @@
 .border{
     border: #313131;
 }
-
-
+.border-big{
+    border-top-width: 15px;
+}
 .inputS{
     border-radius: 30px;
     width: 500px;
@@ -105,47 +110,105 @@
 .margin-top-padding{
     margin-top:35px;
 }
-.ToDoList{
-    margin-bottom: 40px;
+.mar-top{
+    margin-top: -15px;
 }
-.CheckBox{
-    margin-bottom: 30px;
+.big-graph{
+    height: 330px;
+    width:660px;
 }
-.form-check-input{
-    height: 25px;
-    width: 25px;
-}
-.form-check-input:checked {
-    background-color: #18cdca;
-    border-color: #18cdca;
-}
-.form-check-label{
-    font-size: 15px;
-    padding-left: 20px;
-    padding-top: 4px;
-}
-.restangle{
-    height: 28px;
-    width: 70px;
-    border-radius: 4px;
+.second-container{
+    background-color: #f7f6f7;
+    .blocks-color{
+        background-color: white;
+    }
+    .mini-graph{
+        height: 60px;
+        width: 120px;
+    }
+    .mini-graph2{
+        height: 200px;
+        width: 100px;
+    }
+    .UserInformation{
+        .user_pic{
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            position:absolute;
+            margin-left: 40%;
+            margin-top: 14%;        
+            padding: 0;
+        }
+        .back-photo{
+            position: relative;
+            width: 100%;
+            height: 205px;
+            overflow: hidden;
+            filter: brightness(40%)
+        }
+        .text-size{
+            font-size: smaller;
+        }
+    }
+    .ToDoList{
+        margin-bottom: 40px;
+    }
+    .CheckBox{
+        margin-bottom: 30px;
+        .form-check-input{
+            height: 25px;
+            width: 25px;
+        }
+        .form-check-input:checked {
+            background-color: #18cdca;
+            border-color: #18cdca;
+        }
+        .form-check-label{
+            font-size: 15px;
+            padding-left: 20px;
+            padding-top: 4px;
+        }
+        .restangle{
+            height: 28px;
+            width: 80px;
+            border-radius: 4px;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    .friend-messages{
+        .user_pic_friends{
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+        }
+        .dot{
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 5%;
+            padding-right: 1px;
+            left: 45px;
+            top: -7px;
+            border: 4px solid white;
+        }
+
+    }
+
+
+    .blue-color-text{
+        color: #32aeff;
+    }
 }
 .welcomeP{
     
     color: #b8b8b8;
 }
-.dot{
-    height: 18px;
-    width: 13px;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 5%;
-    padding-right: 1px;
-    left: 30px;
-    top: -18px;
-    border: 4px solid white;
-}
+
 .graph6-1{
     color: white;
     width: 90px;
@@ -154,8 +217,8 @@
     margin-top: 35px;
 }
 .graphDot{
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
@@ -172,7 +235,7 @@
 }
 .Year{
     border-radius: 0px 5px 5px 0px;
-    margin-right: 520px;
+    margin-right: 425px;
 }
 .MonthColor{
     background-color:#003054
@@ -198,4 +261,70 @@
 
 .padding-bottoms{
     padding-left: 40px;
+}
+
+.content-wrapper {
+    .button.padding-bottoms {
+        span.badge {
+            position: absolute;
+            top: 18px;
+            right: 66px;
+            transform: translate(-50%, -50%);
+            padding: 1px;
+            background-color: #dc3545; 
+            border: 3px solid #faf9f9;
+            border-radius: 50px;
+            width: 12px; 
+            height: 12px;
+            display: flex;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 1px 4px #dc35462b;
+            
+          }
+    }
+}
+
+.horizontal-chart {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 10px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+.divProcent1{
+    height: 30px;
+    width: 50px;
+    border:2px solid #52be7f;
+    border-radius: 20px;
+    text-align: center;
+    color: #52be7f;
+}
+.divProcent2{
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    border:2px  solid #3498db;
+    text-align: center;
+    color: #3498db;
+}
+
+.chrome56{
+    padding: 107px;
+    text-align:center;
+    .chrome{
+        font-size: 28px;
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+    }
+    .procent{
+        font-size: 20px;
+    }
 }
